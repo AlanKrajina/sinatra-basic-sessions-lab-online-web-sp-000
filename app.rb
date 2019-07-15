@@ -11,11 +11,10 @@ get '/' do
   erb :index
 end
 
-  post '/' do                                           <<<<<-------- s ovim ne otvara novu stranicu nego refres rezultat na staru?
-    text_from_user = params[:user_text]
+  post '/' do                                           
+    text_from_user = params[:item]
  
     @analyzed_text = TextAnalyzer.new(text_from_user)
-#   @analyzed_text = TextAnalyzer.new(params[:user_text])
 
     erb :results
   end
