@@ -12,11 +12,8 @@ get '/' do
 end
 
   post '/checkout' do                                           
-    text_from_user = params[:item]
+    @session = params[:item]
  
-    @analyzed_text = TextAnalyzer.new(text_from_user)
-
-    erb :results
   end
 
 end
