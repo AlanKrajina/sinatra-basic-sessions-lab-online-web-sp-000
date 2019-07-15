@@ -7,6 +7,8 @@ configure do
   set :session_secret, "secret"
 end
 
-
+get '/hey' do 
+  @session = session
+end
 
 end
