@@ -10,7 +10,7 @@ end
 get '/' do 
   @session = session
   
-  eerb :index
+  erb :index
 end
 
 end
