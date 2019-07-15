@@ -7,8 +7,10 @@ configure do
   set :session_secret, "secret"
 end
 
-get '/hey' do 
+get '/' do 
   @session = session
+  
+  eerb :index
 end
 
 end
