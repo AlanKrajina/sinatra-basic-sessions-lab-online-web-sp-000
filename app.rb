@@ -13,7 +13,7 @@ end
 
   post '/checkout' do                                           
     @session = params[:item]
- 
+ binding.pry
   end
 
 end
