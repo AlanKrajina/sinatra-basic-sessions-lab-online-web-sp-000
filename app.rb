@@ -14,7 +14,7 @@ end
   post '/checkout' do                                           
     @session = params[:item]
   
-  erb
+  erb :results
   end
 
 end
