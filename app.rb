@@ -12,7 +12,7 @@ get '/' do
 end
 
   post '/checkout' do                                           
-    @session = params[:item]
+    @session["item"] = params[:item]
   binding.pry
   erb :results
   end
