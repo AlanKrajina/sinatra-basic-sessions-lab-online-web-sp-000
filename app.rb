@@ -11,7 +11,7 @@ get '/' do
   erb :index
 end
 
-  post '/' do                                           
+  post '/checkout' do                                           
     text_from_user = params[:item]
  
     @analyzed_text = TextAnalyzer.new(text_from_user)
